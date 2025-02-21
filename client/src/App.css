@@ -1,42 +1,91 @@
 .app {
   height: 100vh;
+  width: 100vw;
   display: flex;
+  flex-direction: column; /* Align everything in a column */
   justify-content: center;
   align-items: center;
-  background-color: #fefefe;
+  background-image: url('https://w0.peakpx.com/wallpaper/1013/695/HD-wallpaper-cats-all-collage-cat-pisici.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: 'Arial', sans-serif;
+  overflow: hidden;
 }
 
+/* Hero Section */
 .hero {
   text-align: center;
-  padding: 50px;
-  background: #f4f4f9;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.021); 
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px); 
+  max-width: 60%;
+  margin-bottom: 20px;
 }
 
 .hero h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
   color: black;
+  margin-bottom: 10px;
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #555;
+  color: #333333;
   margin-bottom: 20px;
 }
 
 .hero button {
   padding: 10px 20px;
   font-size: 1rem;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: #0073e6;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .hero button:hover {
-  background-color: #005bb5;
+  background-color: #005bb5;
+}
+
+/* Cat Card Styling */
+.cat-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cat-card {
+  background: black;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+  color: white;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+}
+
+.cat-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cat-card h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.cat-card p {
+  font-size: 1rem;
+  color: #555;
 }
