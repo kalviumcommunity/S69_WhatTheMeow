@@ -3,17 +3,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fefefe;
+  background-image: url('https://source.unsplash.com/1600x900/?cat,cute');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: 'Arial', sans-serif;
 }
+
 
 .hero {
   text-align: center;
   padding: 50px;
-  background: #f4f4f9;
+  background: rgba(244, 244, 249, 0.9);
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin: 20px;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    padding: 60px;
+    max-width: 800px;
+  }
+}
+
 
 .hero h1 {
   font-size: 2.5rem;
@@ -38,5 +66,5 @@
 }
 
 .hero button:hover {
-  background-color: #005bb5;
+  background-color:#005bb5;
 }
